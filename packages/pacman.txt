@@ -4,9 +4,7 @@ alsa-firmware
 alsa-plugins
 alsa-utils
 amd-ucode
-ark
 asdf-vm
-audacity
 awesome-terminal-fonts
 base
 base-devel
@@ -88,7 +86,6 @@ freerdp
 fsarchiver
 fwupd
 ghostty
-gimp
 git
 glances
 gnome-keyring
@@ -102,7 +99,6 @@ hwdetect
 hwinfo
 hyprpicker
 inetutils
-inkscape
 inter-font
 iperf3
 iwd
@@ -111,16 +107,6 @@ jdk-openjdk
 jfsutils
 jq
 k9s
-kate
-kcalc
-kde-gtk-config
-kdeconnect
-kdegraphics-thumbnailers
-kdialog
-kio-admin
-krdc
-kwallet-pam
-kwalletmanager
 lazygit
 less
 lib32-nvidia-utils
