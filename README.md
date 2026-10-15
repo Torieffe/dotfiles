@@ -9,8 +9,7 @@ sudo pacman -S --needed chezmoi git jq
 chezmoi init <url-del-repo>
 chezmoi diff            # controlla cosa verrà scritto
 chezmoi apply
-sudo pacman -S --needed - < "$(chezmoi source-path)/packages/pacman.txt"
-paru -S --needed - < "$(chezmoi source-path)/packages/aur.txt"
+paru -S --needed - < "$(chezmoi source-path)/packages/pacman.txt"
 ```
 
 ## Cosa è incluso
