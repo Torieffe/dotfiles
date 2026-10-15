@@ -1,0 +1,99 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette
+{
+  "disable_ai": false,
+  "agent_servers": {
+    "claude-acp": {
+      "default_config_options": {
+        "effort": "high",
+        "model": "opus"
+      },
+      "type": "registry"
+    }
+  },
+  "base_keymap": "VSCode",
+  "lsp": {
+    "vtsls": {
+      "settings": {
+        "typescript": {
+          "updateImportsOnFileMove": {
+            "enabled": "always"
+          }
+        },
+        "javascript": {
+          "updateImportsOnFileMove": {
+            "enabled": "always"
+          }
+        }
+      },
+      "enable_lsp_tasks": true
+    }
+  },
+  "cli_default_open_behavior": "new_window",
+  "terminal": {
+    "font_size": 17.0
+  },
+  "minimap": {
+    "show": "always"
+  },
+  "project_panel": {
+    "dock": "left"
+  },
+  "outline_panel": {
+    "dock": "left"
+  },
+  "collaboration_panel": {
+    "dock": "left"
+  },
+  "agent": {
+    "tool_permissions": {
+      "default": "allow",
+      "tools": {}
+    },
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "claude-sonnet-5.5",
+      "enable_thinking": true,
+      "effort": "high"
+    },
+    "dock": "right",
+  },
+  "git_panel": {
+    "dock": "left"
+  },
+  "show_edit_predictions": false,
+  "buffer_font_family": "Comic Mono",
+  "icon_theme": "VSCode Icons for Zed (Dark)",
+  "ui_font_size": 16,
+  "buffer_font_size": 17.0,
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "Kurenai"
+  },
+  "format_on_save": "on",
+  "formatter": "language_server",
+  //"semantic_tokens": "combined",
+  // "global_lsp_settings": {
+  //   "semantic_token_rules": [
+  //     {
+  //       "token_type": "variable",
+  //       "token_modifiers": [
+  //         "readonly",
+  //         "local"
+  //       ],
+  //       "foreground_color": "#E5C07B"
+  //     },
+  //     {
+  //       "token_type": "variable",
+  //       "foreground_color": "#D07277"
+  //     }
+  //   ]
+  // },
+}

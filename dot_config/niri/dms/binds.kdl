@@ -1,0 +1,9 @@
+binds {
+    Mod+Return hotkey-overlay-title="Default Launcher: Toggle" { spawn "dms" "ipc" "call" "spotlight" "toggle"; }
+    Mod+A hotkey-overlay-title="Open audio settings" { spawn "pavucontrol"; }
+    Mod+B hotkey-overlay-title="Open Firefox" { spawn "firefox"; }
+    Mod+D hotkey-overlay-title="Run an Application: Firefox Developer Edition" { spawn "firefox-developer-edition"; }
+    Mod+E hotkey-overlay-title="Start file explorer: Dolphin" { spawn "dolphin"; }
+    Mod+G hotkey-overlay-title="Start: Slack & Discord" { spawn "sh" "-c" "slack & discord &"; }
+    Mod+T hotkey-overlay-title="Open a Terminal: Ghostty" { spawn "ghostty"; }
+}

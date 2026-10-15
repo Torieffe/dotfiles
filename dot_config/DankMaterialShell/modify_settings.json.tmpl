@@ -1,0 +1,14 @@
+#!/bin/bash
+# Applica le impostazioni DMS versionate (.dms/settings.base.json) mantenendo
+# le preferenze dei monitor già presenti su questa macchina.
+# Per aggiornare la base dopo aver cambiato le impostazioni: dms-settings-save
+cur="$(cat)"
+echo "$cur" | jq -e . >/dev/null 2>&1 || cur='{}'
+jq --argjson cur "$cur" --arg home "$HOME" '
+  .customThemeFile |= (if type == "string" then sub("^~"; $home) else . end)
+  | if ($cur.matugenTargetMonitor // "") != "" then .matugenTargetMonitor = $cur.matugenTargetMonitor else . end
+  | .barConfigs |= map(
+      . as $b
+      | ([$cur.barConfigs // [] | .[] | select(.id == $b.id) | .screenPreferences][0]) as $sp
+      | if $sp then .screenPreferences = $sp else . end)
+' "{{ .chezmoi.sourceDir }}/.dms/settings.base.json"

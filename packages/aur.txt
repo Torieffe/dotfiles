@@ -1,0 +1,10 @@
+asdf-vm
+bruno-bin
+caelestia-firefox-theme
+darkly-bin
+kdotool
+minecraft-launcher
+papirus-folders
+qt6ct-kde
+qtengine
+slack-desktop

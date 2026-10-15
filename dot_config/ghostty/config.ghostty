@@ -1,0 +1,8 @@
+background-opacity = 0.85
+font-family = "Comic Mono"
+window-height = 38
+window-width = 118
+keybind = global:super+f1=toggle_quick_terminal
+quick-terminal-position = top
+quick-terminal-size = 540px,1920px
+theme = kurenai
